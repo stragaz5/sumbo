@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+    a{
+        text-decoration: none;
+        color: black;
+       }
+       .span{
+        font-size: 50px;
+        margin-top: 5%;
+        margin-bottom: 2%;
+       }
+       .input{
+        width: 20%;
+        font-size: 16px;
+        font-weight: 300;
+        color: #888;
+        letter-spacing: 1px;
+        border: none;
+        outline: none;
+        background: rgba(0, 123, 255, 0.06);
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        border-radius: 0px;
+       }
+       button{
+        width: 20%;
+        background-color: red;
+        font-size: 16px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: white;
+       }
+       .last{
+        font-size: 14px;
+        font-weight: 400;
+        font-style: initial;
+       }
+       .lasts form{
+        padding-bottom:2%;
+       }
+       .lasts{
+        padding-bottom: 5%;
+       }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="container">
+    <div class="ama row">
+    <div class="col-1">
+    <h2><span class="tp">B</span>aggage</h2>
+    <h6>online store</h6>
+    </div>
+    <div class="col-8"></div>
+    <div class="sign col-3">
+    <i class="fa fa-user-circle-o"></i>
+    <a href="signin.html">sign in</a>
+
+    <i class="fa fa-pencil-square-o shift"></i>
+    <a href="signup.html">sign up</a>
+    </div>
+    </div>
+
+     <hr>
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="container-fluid"> 
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-danger" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                <a class="nav-link dropdown-toggle"  data-bs-toggle="dropdown" href="#">DROPDOWN</a>
+                <ul class="dropdown-menu"  aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="contact.html">SERVICES</a>
+                </li>
+                <li>
+                  <a  class="dropdown-item" href="contact.html">FEATURES</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="dropdown.html">SINGLE PAGE</a>
+                </li>
+              </ul>
+            </div>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="collections.html">COLLECTIONS</a>
+              </li>
+              <li>
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="search here..." class="search-bar">
+            <button onclick="searchFunction()"><i class="fa fa-search"></i></button>
+           </div>
+        </div>
+      </nav> 
+    </div>
+
+    </div>
+
+    <div class="text-center span">
+      <i class="fa fa-user-circle-o"></i>
+    </div>
+
+    <div class="text-center lasts">
+      <form action="" method="get">
+      <div>
+      <input type="text" placeholder="user name" required class="input">
+    </div>
+    <div>
+      <input type="email" placeholder="user email" required class="input">
+    </div>
+    <div>
+      <input type="text" placeholder="user phone" required class="input">
+    </div>
+    <div>
+      <input type="password" placeholder="password" required class="input">
+    </div>
+    <div>
+      <button>SIGN UP</button>
+    </div>
+    </form>
+    <a href="" class="last">BY CLICKING SIGNUP, I AGREE TO YOUR TERMS</a>
+    </div>
+    
+    <div class="delivery">
+      <div class="first-badge">
+        <i class="fa fa-truck text-danger"></i>
+        <h5 class="text-white text-center">FREE SHIPPING</h5>
+        <p class="text-center">on all oders above $2000</p>
+      </div>
+        <div class="second-badge">
+        <i class="fa fa-bullhorn text-danger"></i>
+        <h5 class="text-white text-center">FREE RETURN</h5>
+        <p class="text-center">on 1st exchange in 30 days</p>
+      </div>
+      <div  class="third-badge">
+      <i class="fa fa-gift text-danger"></i>
+      <h5 class="text-white text-center">MEMBER DISCOUNT</h5>
+      <p class="text-center">Register & save up to $29%</p>
+    </div>
+    </div>
+  
+    <div class="container">
+    <div class="last-logo row">
+      <div class="col-lg-3 log">
+      <h2><span class="tp">B</span>aggage</h2>
+      <h6>online store</h6>
+      </div>
+      <div class="col-lg-3 foot me">
+        <a href=""><span class="fa fa-chevron-right"></span> HOME</a>
+        <a href="aboutus.html"><span class="fa fa-chevron-right"></span>ABOUT</a>
+        <a href=""><span class="fa fa-chevron-right"></span>SHOP</a>
+        <a href="collections.html" ><span class="fa fa-chevron-right"></span>COLLECTIONS</a>      
+      </div>
+      <div class="col-lg-3 foot">
+        <a href=""><span class="fa fa-chevron-right"></span>EXTRA PAGE</a>
+        <a href=""><span class="fa fa-chevron-right"></span>TERMS & CONDITIONS</a>
+        <a href=""><span class="fa fa-chevron-right"></span>SHOP SINGLE</a>
+        <a href=""><span class="fa fa-chevron-right"></span>CONTACT US</a>
+      </div>
+      <div class="col-lg-3 foot">
+        <a href=""><span class="fa fa-chevron-right"></span> LOGIN</a>
+        <a href=""><span class="fa fa-chevron-right"></span>REGISTER</a>
+        <a href=""><span class="fa fa-chevron-right"></span>PRIVACY & POLICY</a>   
+      </div>
+      <div class="follow">
+      <hr>
+      <h3 class="text-center">Follow Us</h3>
+      <div class="social">
+      <h5 class="text-center"><span class="fa fa-facebook text-primary"></span>Facebook</h5>
+      <h5 class="text-center man"><span class="fa fa-twitter twitter"></span>Twitter</h5>
+      <h5 class="text-center man"><span class="fa fa-google text-danger"></span>Google</h5>
+      </div>
+      <hr>
+      <span class="fa fa-angle-double-up double"></span>
+    </div>
+    </div>
+    </div>
+  
+    <div class="last-foot">
+      <p class="text-center"><span class="fa fa-copyright"></span> 2019 Baggage. All rights reserved | Design by W3layouts.</p>
+    </div> 
+  
+</body>
+</html>

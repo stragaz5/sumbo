@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      #map{
+        height: 400px;
+      }
+      .cont input{
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        background-color: rgb(236, 244, 242);
+        border: none;
+      }
+      a{
+        text-decoration: none;
+      }
+      .cont{
+        outline: solid;
+        margin-top: 5%;
+        outline-width: 1px;
+        background-color: white;
+      }
+      .cont form{
+        padding: 5%;
+      }
+      .cont .your{
+        width: 100%;
+        height: 150px;
+        margin-top: 20px;
+        background-color: rgb(236, 244, 242);
+        border: none;
+      }
+      .map{
+        /* border: solid; */
+        padding-bottom: 0;
+        border-width: 1px;
+        margin-top: 2%;
+      }
+      .contact-link{
+        padding: 5%;
+      }
+      .contact-link h4{
+        padding-bottom: 3%;
+      }
+      .contact-link span{
+        padding-right: 2%;
+      }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="container">
+    <div class="ama row">
+    <div class="col-1">
+    <h2><span class="tp">B</span>aggage</h2>
+    <h6>online store</h6>
+    </div>
+    <div class="col-8"></div>
+    <div class="sign col-3">
+    <i class="fa fa-user-circle-o"></i>
+    <a href="signin.html">sign in</a>
+
+    <i class="fa fa-pencil-square-o shift"></i>
+    <a href="signup.html">sign up</a>
+    </div>
+    </div>
+
+     <hr>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid"> 
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                <a class="nav-link dropdown-toggle"  data-bs-toggle="dropdown" href="#">DROPDOWN</a>
+                <ul class="dropdown-menu"  aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="aboutus.html">SERVICES</a>
+                </li>
+                <li>
+                  <a  class="dropdown-item" href="contact.html">FEATURES</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="dropdown.html">SINGLE PAGE</a>
+                </li>
+              </ul>
+            </div>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="collections.html">COLLECTIONS</a>
+              </li>
+              <li>
+                <a class="nav-link text-danger" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="search here..." class="search-bar">
+            <button onclick="searchFunction()"><i class="fa fa-search"></i></button>
+           </div>
+        </div>
+      </nav> 
+    </div>
+    </div>
+
+    <h1 class="text-center">CONTACT US</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="cont">
+                    <form action="">
+                    <input type="text" placeholder="username">
+                    <input type="text" name="" id="" placeholder="useremail">
+                    <input type="text" placeholder="userphone">
+                    <input type="text" placeholder="password">
+                    <textarea name="" class="your" placeholder="your message here...">
+
+                    </textarea>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 map">
+              
+              <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-link">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4><span class="fa fa-comments"></span>COMMUNICATION</h4>
+            <p>For General Queries, Including Property Sales 
+              And Constructions, Please Email Us At</p>
+              <a href="" class="text-danger">Info@Example.Com</a>
+          </div>
+          <div class="col-md-4">
+            <h4><span class="fa fa-crosshairs"></span>TECHNICAL SUPPORT</h4>
+            <p>We Are Ready To Help! If You Have Any Queries Or Issues,
+               Contact Us For Support</p>
+               <a href="" class="text-danger">+12 388 455 6789.</a>
+          </div>
+          <div class="col-md-4">
+            <h4><span class="fa fa-map"></span>OTHERS</h4>
+            <p>We Are Ready To Help! If You Have Any Queries Or Issues,
+              Contact Us For Support</p>
+              <a href="" class="text-danger">+12 388 455 6789.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       
+  <div class="sub-footer">
+    <div class="container">
+  <h5 class="text-center">Subscribe to the Handbags Store mailing list to receive updates on new arrivals, special offers and other discount information.</h5>
+    <div class="fom">
+      <input type="text" placeholder="Enter your email.." name="email" onclick="inp()" id="inp">
+      <label>
+        <button type="submit">Subscribe</button>
+      </label>
+    </div>
+  </div>
+  </div>
+    
+  <div class="delivery">
+    <div class="first-badge">
+      <i class="fa fa-truck text-danger"></i>
+      <h5 class="text-white text-center">FREE SHIPPING</h5>
+      <p class="text-center">on all oders above $2000</p>
+    </div>
+      <div class="second-badge">
+      <i class="fa fa-bullhorn text-danger"></i>
+      <h5 class="text-white text-center">FREE RETURN</h5>
+      <p class="text-center">on 1st exchange in 30 days</p>
+    </div>
+    <div  class="third-badge">
+    <i class="fa fa-gift text-danger"></i>
+    <h5 class="text-white text-center">MEMBER DISCOUNT</h5>
+    <p class="text-center">Register & save up to $29%</p>
+  </div>
+  </div>
+
+  <div class="container">
+  <div class="last-logo row">
+    <div class="col-lg-3 log">
+    <h2><span class="tp">B</span>aggage</h2>
+    <h6>online store</h6>
+    </div>
+    <div class="col-lg-3 foot me">
+      <a href=""><span class="fa fa-chevron-right"></span> HOME</a>
+      <a href="aboutus.html"><span class="fa fa-chevron-right"></span>ABOUT</a>
+      <a href=""><span class="fa fa-chevron-right"></span>SHOP</a>
+      <a href="collections.html"><span class="fa fa-chevron-right"></span>COLLECTIONS</a>      
+    </div>
+    <div class="col-lg-3 foot">
+      <a href=""><span class="fa fa-chevron-right"></span>EXTRA PAGE</a>
+      <a href=""><span class="fa fa-chevron-right"></span>TERMS & CONDITIONS</a>
+      <a href=""><span class="fa fa-chevron-right"></span>SHOP SINGLE</a>
+      <a href="" class="text-danger"><span class="fa fa-chevron-right"></span>CONTACT US</a>
+    </div>
+    <div class="col-lg-3 foot">
+      <a href=""><span class="fa fa-chevron-right"></span> LOGIN</a>
+      <a href=""><span class="fa fa-chevron-right"></span>REGISTER</a>
+      <a href=""><span class="fa fa-chevron-right"></span>PRIVACY & POLICY</a>   
+    </div>
+    <div class="follow">
+    <hr>
+    <h3 class="text-center">Follow Us</h3>
+    <div class="social">
+    <h5 class="text-center"><span class="fa fa-facebook text-primary"></span>Facebook</h5>
+    <h5 class="text-center man"><span class="fa fa-twitter twitter"></span>Twitter</h5>
+    <h5 class="text-center man"><span class="fa fa-google text-danger"></span>Google</h5>
+    </div>
+    <hr>
+    <span class="fa fa-angle-double-up double"></span>
+  </div>
+  </div>
+  </div>
+
+  <div class="last-foot">
+    <p class="text-center"><span class="fa fa-copyright"></span> 2019 Baggage. All rights reserved | Design by W3layouts.</p>
+  </div> 
+  
+
+
+
+    <script>
+      // Initialize the map
+const map = L.map('map').setView([9, 2], 6); // Centered at (latitude: 0, longitude: 0) with zoom level 2
+
+// Add a base layer (e.g., OpenStreetMap)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Add markers for locations
+const locations = [
+  { name: 'Location 1', lat: 40.7128, lon: -74.0060 }, // New York City
+  { name: 'Location 2', lat: 34.0522, lon: -118.2437 }, // Los Angeles
+  { name: 'Location 3', lat: 51.5074, lon: -0.1278 },   // London
+  // Add more locations as needed
+];
+
+locations.forEach(location => {
+  L.marker([location.lat, location.lon]).addTo(map)
+      .bindPopup(location.name);
+});
+
+  </script>
+</body>
+</html>
